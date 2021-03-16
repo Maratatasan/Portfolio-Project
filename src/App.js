@@ -1,10 +1,37 @@
 import "./App.css";
-import Project from "./Project";
-//two dots go one folder back :)
 import "bootstrap/dist/css/bootstrap.min.css";
+import Particles from "react-particles-js";
 import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+
 function App() {
-  return <Navbar />;
+  return (
+    <div className="main-box">
+      <Particles
+        className="particles-canvas"
+        params={{
+          particles: {
+            number: {
+              value: 30,
+              density: {
+                enable: true,
+                value_area: 900,
+              },
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 10,
+                color: "#f9ab00",
+              },
+            },
+          },
+        }}
+      />
+      <Navbar />
+      <Header />
+    </div>
+  );
 }
 
 export default App;
