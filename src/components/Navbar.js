@@ -1,7 +1,9 @@
 import React from "react";
 import logo from "../Logo1.png";
-//REACT FONTAWESOME IPORTS
+//REACT FONTAWESOME icons ImPORTS
+// the line below imports the component itself
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// the line below imports the 3 lines for dropdown menu
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
