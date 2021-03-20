@@ -11,8 +11,9 @@ const Services = () => {
       <div className="container">
         {/* bootstrap row */}
         <div className="row">
-          {/* bootstraps something to do with columns medium and small  */}
-          <div className="col-md-3 col-sm-6">
+          {/* bootstraps 3 different screens sizes ie lg=large md=medium
+          and how many columns of of divs will fit in different screen sizes  */}
+          <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               <div className="circle">
                 <FontAwesomeIcon className="icon" icon={faDesktop} size="2x" />
@@ -24,7 +25,7 @@ const Services = () => {
             </div>
           </div>
           {/* */}
-          <div className="col-md-3 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               <div className="circle">
                 <FontAwesomeIcon className="icon" icon={faFileCode} size="2x" />
@@ -36,7 +37,7 @@ const Services = () => {
             </div>
           </div>
           {/* */}
-          <div className="col-md-3 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               <div className="circle">
                 <FontAwesomeIcon
@@ -53,7 +54,7 @@ const Services = () => {
             </div>
           </div>
           {/* */}
-          <div className="col-md-3 col-sm-6">
+          <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
               <div className="circle">
                 <FontAwesomeIcon className="icon" icon={faGoogle} size="2x" />
