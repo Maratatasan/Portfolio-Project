@@ -47,12 +47,20 @@ const Portfolio = () => {
       </div>
     );
     PopupboxManager.open({ content });
+
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "JavaScript MVC model/architecture to do list app project.",
+        },
+      },
+    });
   };
 
-  const popupboxConfigMvcJsList = {
+  const popupboxConfig = {
     titleBar: {
       enable: true,
-      text: "JavaScript MVC model/architecture to do list app project.",
     },
     fadeIn: true,
     fadeInSpeed: 500,
@@ -93,15 +101,14 @@ const Portfolio = () => {
       </div>
     );
     PopupboxManager.open({ content });
-  };
-
-  const popupboxConfigCountdown = {
-    titleBar: {
-      enable: true,
-      text: "React countdown app project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "React countdown app project.",
+        },
+      },
+    });
   };
 
   // expenses project ---------------------------///
@@ -139,16 +146,17 @@ const Portfolio = () => {
       </div>
     );
     PopupboxManager.open({ content });
+
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "JavaScript expenses app project.",
+        },
+      },
+    });
   };
 
-  const popupboxConfigExpenses = {
-    titleBar: {
-      enable: true,
-      text: "JavaScript expenses app project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
   // toDoList project ---------------------------///
   const openToDoList = () => {
     const content = (
@@ -190,16 +198,17 @@ const Portfolio = () => {
       </div>
     );
     PopupboxManager.open({ content });
+
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "JavaScript to do list app project.",
+        },
+      },
+    });
   };
 
-  const popupboxConfigTodolist = {
-    titleBar: {
-      enable: true,
-      text: "JavaScript to do list app project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
   // techStore project ---------------------------///
   const openTechStore = () => {
     const content = (
@@ -235,15 +244,14 @@ const Portfolio = () => {
       </div>
     );
     PopupboxManager.open({ content });
-  };
-
-  const popupboxConfigTechStore = {
-    titleBar: {
-      enable: true,
-      text: "HTML and CSS Project....",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "HTML and CSS project.",
+        },
+      },
+    });
   };
 
   return (
@@ -311,11 +319,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <PopupboxContainer {...popupboxConfigMvcJsList} />
-      <PopupboxContainer {...popupboxConfigCountdown} />
-      <PopupboxContainer {...popupboxConfigExpenses} />
-      <PopupboxContainer {...popupboxConfigTodolist} />
-      <PopupboxContainer {...popupboxConfigTechStore} />
+      <PopupboxContainer {...popupboxConfig} />
     </div>
   );
 };
